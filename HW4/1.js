@@ -204,7 +204,7 @@ function ugadaiChislo() {
 	if (num == prNum) {
 		out.innerHTML = 'Вы угадали';
 		alert('Победа!');
-
+		popitka = 1;
 	}
 	else {
 		if (num > prNum){
@@ -220,6 +220,7 @@ function ugadaiChislo() {
 	
 	if (popitka == 4) {
 		alert('Конец игры');
+		popitka = 1;
 	}
 	
 }
