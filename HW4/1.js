@@ -1,22 +1,18 @@
 // Task 1
 
-function f01 () {
-var pp = document.getElementsByTagName('p');
+// var pp = document.getElementsByTagName('p');
 
-for (var i = 0; i<pp.length; i++) {
-	pp[i].onclick = f1;
-}
+// for (var i = 0; i<pp.length; i++) {
+// 	pp[i].onclick = f1;
+// }
 
-function f1() {
-	this.style.background = 'red';
-}
-}
+// function f1() {
+// 	this.style.background = 'red';
+// }
 
-f01 ();
 
 // Task 2
 
-function f02 () {
 var img = document.getElementsByTagName('img');
 
 for (var i = 0; i<img.length; i++) {
@@ -26,21 +22,34 @@ for (var i = 0; i<img.length; i++) {
 function f2() {
 	this.style.boxShadow = "10px 20px 30px blue";
 }
-}
 
-f02 ();
 
 // Task 3
 
-function f03 () {
+document.getElementById('b0').onclick = but0;
+
+function but0 () {
 var pp = document.getElementsByTagName('p');
 
 for (var i = 0; i<pp.length; i++) {
 	pp[i].innerHTML = i+1 + ') ' + pp[i].innerHTML;
-}
+	}
 }
 
-f03 ();
+
+// var pp = document.getElementsByTagName('p');
+// for (var i = 0; i<pp.length; i++) {
+// 	pp[i].onclick = f3;
+// }
+
+// function f3 () {
+// 	for (var i = 0; i<pp.length; i++) {
+// 		if (this == pp[i]) {
+// 			break;
+// 		}
+// 	}
+// 	this.innerHTML = (i + 1) + ') ' + this.innerHTML;
+// }
 
 // Task 4
 
@@ -73,7 +82,7 @@ function numStep() {
 // Task 6
 
 document.getElementById('b6').onclick = textDecor;
-function textDecor(teg) {
+function textDecor() {
 	var teg = document.getElementById('i6').value;
 	var newTeg = document.getElementsByTagName(teg);
 	for (var i of newTeg) {
